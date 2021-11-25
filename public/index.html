@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="chat-container">
+      <div class="chat-header">
+        <div class="logo">
+          <i class="fab fa-facebook-messenger"></i>
+          <h3>Whats App Messanger</h3>
+        </div>
+        <p id="your-name"> youer name</p>
+      </div>
+      <div class="chat-section">
+            <div class="main-warrper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+                           
+                        </div>
+                        <div class="message-row you-message">
+                            
+                        </div>
+                    </div>
+                </div>
+                <form class="msg-tex">
+                    <input type="text" name="msg" id="msg" placeholder="Type Message Here" autocomplete="off">
+                    <button id="btn-send">
+                        <i class="fas fa-paper-plane">Send</i>
+                    </button>
+                </form>
+            </div>
+      </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
